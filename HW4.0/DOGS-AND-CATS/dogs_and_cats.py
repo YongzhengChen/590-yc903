@@ -231,18 +231,18 @@ plt.grid(False)
 plt.imshow(display_grid, aspect='auto', cmap='viridis')
 
 # Defining the loss tensor for filter visualization
-from keras.applications import VGG16
-from keras import backend as K
+from tensorflow.keras.applications import VGG16
+from tensorflow.keras import backend as K
+import tensorflow as tf
+tf.compat.v1.disable_eager_execution()
 model = VGG16(weights='imagenet',
               include_top=False)
 layer_name = 'block3_conv1'
 filter_index = 0
 layer_output = model.get_layer(layer_name).output
 loss = K.mean(layer_output[:, :, :, filter_index])
-
 # Obtaining the gradient of the loss with regard to the input
 grads = K.gradients(loss, model.input)[0]
-grads /= (K.sqrt(K.mean(K.square(grads))) + 1e-5)
 
 #Fetching Numpy output values given Numpy input values
 iterate = K.function([model.input], [loss, grads])
