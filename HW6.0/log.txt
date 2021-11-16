@@ -1,0 +1,33 @@
+HW6.1 Training loss and Validation Loss:
+Epoch 31/35
+235/235 [==============================] - 1s 4ms/step - loss: 0.0101 - val_loss: 0.0097
+Epoch 32/35
+235/235 [==============================] - 1s 4ms/step - loss: 0.0101 - val_loss: 0.0097
+Epoch 33/35
+235/235 [==============================] - 1s 4ms/step - loss: 0.0101 - val_loss: 0.0097
+Epoch 34/35
+235/235 [==============================] - 1s 4ms/step - loss: 0.0100 - val_loss: 0.0097
+Epoch 35/35
+235/235 [==============================] - 1s 4ms/step - loss: 0.0100 - val_loss: 0.0097
+
+Deep Feed Forward auto-encoder anomaly detection on fashion mnist dataset:
+[INFO] mse threshold: 0.3713626700639725
+[INFO] 600 outliers found
+
+HW6.2 Training loss and Validation Loss:
+20/20 [==============================] - 4s 213ms/step - loss: 0.1257 - val_loss: 0.1285
+Epoch 30/35
+20/20 [==============================] - 4s 213ms/step - loss: 0.1249 - val_loss: 0.1269
+Epoch 31/35
+20/20 [==============================] - 4s 213ms/step - loss: 0.1241 - val_loss: 0.1263
+Epoch 32/35
+20/20 [==============================] - 4s 212ms/step - loss: 0.1236 - val_loss: 0.1258
+Epoch 33/35
+20/20 [==============================] - 4s 213ms/step - loss: 0.1232 - val_loss: 0.1248
+Epoch 34/35
+20/20 [==============================] - 4s 210ms/step - loss: 0.1227 - val_loss: 0.1244
+Epoch 35/35
+20/20 [==============================] - 4s 213ms/step - loss: 0.1216 - val_loss: 0.1239
+
+
+
